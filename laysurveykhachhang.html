@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tạo form lấy survey khách hàng</title>
+</head>
+<style>
+    .a{
+        width: 750px;
+        height: 70px;
+    }
+    th{
+        text-align: center;
+        padding: 8px;
+    }
+    tr:nth-child(odd){
+        background-color: #dddddd;
+    }
+</style>
+<body>
+<h3> Market Research Survey</h3>
+<p> please take a few moments to complete this satisfaciton survey</p>
+<h5> what is your age range ?</h5>
+<form method="get" >
+    <select>
+        <option value=" "> 18-24</option>
+        <option> 25-34</option>
+        <option> 35-50</option>
+        <option> 50+</option>
+    </select>
+</form>
+<h5> What is your yearly income range ?</h5>
+<form method="get">
+    <select >
+        <option value=" "> $0 - $25,000</option>
+        <option> $25,001 - $50,000</option>
+        <option> $50,001 - $100,000</option>
+        <option> $100,000 + </option>
+    </select>
+</form>
+<h5> Gender Identity</h5>
+<form>
+    <input type="radio" name="Gender"/> Male<br>
+    <input type="radio" name="Gender"/> Female<br>
+    <input type="radio" name="Gender"/> Nonbinary<br>
+    <input type="radio" name="Gender"/> Other<br>
+    <input type="text" name="bt" size="25"/>
+</form>
+<h5> Which of the following products have your purchased in the last 2 months. Please check all that apply.</h5>
+<form>
+    <input type="checkbox" name="product"/> Product 1<br>
+    <input type="checkbox" name="product"/> Product 2<br>
+    <input type="checkbox" name="product"/> Product 3<br>
+</form>
+<h5> How often would you use our new product</h5>
+    <input type="radio" name="rd"/> Daily<br>
+    <input type="radio" name="rd"/> Weekly<br>
+    <input type="radio" name="rd"/> Monthly<br>
+<h5> What would you pay of the new product</h5>
+<form>
+    <p>$ <input type="number" name="cb"/> .
+        <input type="number" name="cb"/></p>
+    <p> Dollars  Cents</p>
+
+</form>
+<h5> What features would you like to see in the new product</h5>
+    <input type="text" name="text" class="a">
+<p> Please rate level of agreement with the following satatements</p>
+<table>
+    <tr>
+        <th> </th>
+        <th> Strongly Disagree</th>
+        <th> Disagree</th>
+        <th> Agree</th>
+        <th> Strongly Agree</th>
+    </tr>
+    <tr>
+        <td> Our products are priced fairly</td>
+        <td> 1</td>
+        <td> 2</td>
+        <td> 3</td>
+        <td> 4</td>
+    </tr>
+    <tr>
+        <td> Our products are high quality</td>
+        <td> 1</td>
+        <td> 2</td>
+        <td> 3</td>
+        <td> 4</td>
+    </tr>
+    <tr>
+        <td> You would recommend our product to a friend or coworker</td>
+        <td> 1</td>
+        <td> 2</td>
+        <td> 3</td>
+        <td> 4</td>
+    </tr>
+</table>
+<input type="submit" name="sm" value="Submit">
+
+</body>
+</html>
